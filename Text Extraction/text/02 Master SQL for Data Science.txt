@@ -1,0 +1,68 @@
+Total time	:: 08 Hours, 55 Minutes and 05 Seconds
+Videos		:: 37
+
+Course Curriculum
+
+Database Basics
+ Start1 - What is a database (10:03)
+ Start2 - Install PG on Mac (7:24)
+ StartTroubleshoot Connection
+ Start2 - Install Postgres on Windows (7:22)
+ Start3 - Create And Insert Statements (21:57)
+ Start4 - Prepare the Database (14:18)
+ StartASSIGNMENT 1: Create More Tables and Populate Data
+SQL Query Basics
+ Preview5 - Introduction to SELECT statement (18:12)
+ Start6 - Understanding the WHERE clause with ANDs and ORs (23:33)
+ Start7 - WHERE Clause and Operators Continued (14:55)
+ Start8 - WHERE Clause Exercises (11:35)
+ Start9 - Using ORDER BY with DISTINCT and LIMIT (11:54)
+ StartASSIGNMENT 2: Practice Writing Basic Queries (5 Problems)
+Using Functions
+ Start10 - Formatting Data using Functions and Boolean expressions (15:56)
+ Start11 - SUBSTRING and REPLACE (16:08)
+ Start12 - GROUPING functions (10:20)
+ StartASSIGNMENT 3: Practice with Functions, Conditional Expressions and Concatenation
+Grouping Data and Computing Aggregates
+ Start13 - Intro to GROUPING (6:28)
+ Start14 - GROUP BY Clause (17:22)
+ Start15 - GROUP BY Exercises (16:27)
+ StartASSIGNMENT 4: Practice Aggregation Queries
+Using Subqueries
+ Start16 - Table Aliasing (6:20)
+ Preview17 - Subqueries in the FROM and WHERE clause (14:09)
+ Start18 - Subquery in SELECT Clause and Exercies (18:34)
+ Start19 - Subqueries using ANY and ALL with Exercises (19:40)
+ Start20 - More Subquery Exercises (15:29)
+ StartASSIGNMENT 5: Practice with Subqueries
+Using the CASE Clause in Interesting Ways
+ Start21 - Conditional Expressions CASE (20:53)
+ Start22 - CASE Statement Exercises (17:47)
+ StartASSIGNMENT 6: Practice Using Case and Transposing Data
+Advanced Query Techniques using Correlated Subqueries
+ Start23 - Understanding Correlated Subqueries (21:16)
+ Start24 - Correlated Subqueries Exercise (16:07)
+Working with Multiple Tables
+ Start25 - Introduction to Joins (16:29)
+ Start26 - INNER and OUTER joins (25:43)
+ Preview27 - UNION and UNION ALL (14:22)
+ Start28 - CROSS JOIN and Cartesian Product (7:04)
+ Start29 - More Query Exercises (17:27)
+ StartCreating Views vs. Inline Views (8:39)
+ StartASSIGNMENT 7: ADVANCED Problems using Joins, Grouping and Subqueries
+Window Functions for Analytics
+ Start30 - Window Functions and the OVER clause (18:32)
+ Start31 - Window Functions using ORDER BY (21:17)
+ StartRANK, FIRST_VALUE and NTILE Functions (12:00)
+ Start32 - LEAD and LAG Functions (7:42)
+ StartWorking with Rollups and Cubes (11:41)
+ StartChallenging Puzzles For The Brave
+
+ Frequently Asked Questions
+
+When does the course start and finish?
+The course starts now and never ends! It is a completely self-paced online course - you decide when you start and when you finish.
+How long do I have access to the course?
+How does lifetime access sound? After enrolling, you have unlimited access to this course for as long as you like - across any and all devices you own.
+What if I am unhappy with the course?
+We would never want you to be unhappy! If you are unsatisfied with your purchase, contact us in the first 30 days and we will give you a full refund.

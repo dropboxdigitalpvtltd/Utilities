@@ -1,0 +1,32 @@
+Total time 	:: 05 Hours, 13 Minutes and 45 Seconds
+Videos 		:: 17
+price		:: 16$
+
+
+Course Curriculum
+
+Introduction
+ PreviewLecture 1 - Course Overview (5:18)
+ StartLecture 2 - Setting up Elasticsearch and Kibana (10:05)
+ StartInstructions for Windows Users
+ StartLecture 3 - Overview of Elasticsearch (19:26)
+Document Management and Analyzers
+ StartLecture 4 - Indexing, Retrieving and Deleting Documents (25:55)
+ StartLecture 5 - Components of an Index (12:20)
+ StartLecture 6 - Distributed Execution of Requests (25:33)
+ StartLecture 7 - Text Analysis for Indexing and Searching (15:09)
+Defining the Index Structure
+ StartLecture 8 - Index Settings and Mappings (Part 1) (24:51)
+ StartLecture 9: Index Settings and Mappings (Part 2) (17:00)
+Querying Elasticsearch
+ StartFollow these instructions before watching Lecture 10
+ StartLesson 10 - Query DSL (Using the Query Context) (19:40)
+ StartLesson 11 - Query DSL (Continuing the Query Component) (25:27)
+ StartLesson 12 - Query DSL (Filter Context) (23:33)
+ StartFollow these instructions before Lecture 13.
+ StartLesson 13 - Aggregations DSL (19:47)
+ StartLesson 14 - Aggregations DSL (Part 2) (16:15)
+Real-world Project with Logstash and Kibana
+ StartLecture 15 - Download and Configure Logstash (19:53)
+ StartLecture 16 - Logstash Job with Real-time Data Visualization in Kibana (18:00)
+ StartLecture 17 - More on Data Visualizations in Kibana (15:33

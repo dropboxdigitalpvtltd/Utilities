@@ -1,0 +1,1 @@
+Python Script to extract time using Regular Expression and  calculate all the time stamps in a text file.

@@ -1,0 +1,77 @@
+Total time 		:: 16 Hours, 37 Minutes and 59 Seconds'
+Number of Videos	:: 60
+Course Curriculum 
+
+Database Basics
+ StartLesson 1 - Course Overview (5:54)
+ PreviewLesson 2 - Oracle Database Overview & Basics of Tables (19:42)
+ PreviewLesson 3 - Setting up The SQL Development Environment (6:33)
+ PreviewIMPORTANT: Prepare the Course Data (3:42)
+Single Table Queries
+ StartLesson 4 - Retrieving Data Using SELECT Clause (14:42)
+ StartLesson 5 - Using the WHERE Clause In a SQL Query (19:35)
+ StartImportant Notes From Instructor (3:35)
+ StartLesson 6 - Using Operators in the WHERE Clause (19:45)
+ PreviewLesson 7 - Combining WHERE, AND & OR with Operators (19:14)
+ StartLesson 8 - Query Filtering Continued BETWEEN, IN and NULL (19:58)
+ StartLesson 9 - Query Filtering Conditions & Operator Precedence (19:54)
+ StartLesson 10 - Ordering, Concatenating & Aliasing Query Results (19:58)
+ StartASSIGNMENT 1: Practice with Single Table Queries
+Single Row Functions (SRFs)
+ StartLesson 11 - Single Row Functions (SRF) & Using The Dual Table (19:36)
+ StartLesson 12 - Using Functions in WHERE And Character Based SRFs (19:58)
+ StartLesson 13 - Numeric and Date Data type SRFs (19:52)
+ StartLesson 14 - Conversion SRFs & Date Formatting (19:37)
+ StartLesson 15 - Concluding SRFs & NULL / NULLIF Functions (16:15)
+ StartAssignment 2: Practice with Single Row Functions
+Grouping Functions
+ PreviewLesson 16 - Grouping Functions MIN, MAX, AVG, COUNT etc. (19:42)
+ StartLesson 17 - GROUP BY Clause & HAVING Clause (19:57)
+ StartLesson 18 - More Practice With The GROUP BY Clause (12:10)
+Multi-Table Queries and Joins
+ StartLesson 19 - SELECT within SELECT (Subqueries) (23:55)
+ PreviewLesson 20 - Relating Tables Together Using JOINs (19:19)
+ StartLesson 21 - Joins Continued INNER & OUTER Joins (21:29)
+ StartLesson 22 - More Joins With Correlated Subqueries (21:13)
+ StartSELF JOIN (11:10)
+ StartCROSS JOIN, NATURAL JOIN and the USING CLAUSE (8:43)
+ StartEQUIJOIN and NON-EQUIJOINs (9:38)
+ StartLesson 23- CASE Statements (8:40)
+Analytical Functions using OVER and PARTITION with ORDER BY
+ StartOVER Clause with PARTITION BY (18:31)
+ StartCompute Running Totals with Ordering and Partitioning (18:47)
+ StartUnbounded Preceding Order in Over Clause (8:41)
+ StartSliding Windows and Filtering with Analytic Functions (5:59)
+ StartRank, Dense_rank, Lead, and Lag Functions (15:05)
+Creating, Altering, and Updating Tables Using SQL
+ StartLesson 24 - Creating Your Own Tables & Design Considerations (20:59)
+ PreviewLesson 25 - Inserting Data Into Our Table (19:39)
+ StartLesson 26 - Create Table With a Primary Key Constraint (21:34)
+ StartLesson 27 - Using ALTER to modify the table structure (Newly Added) (16:32)
+ StartLesson 28 - Create Table with SELECT + UPDATE Data (Newly Added) (19:55)
+ StartLecture 29 - MERGE Statement in Oracle (16:57)
+ StartPrimary And Foreign Keys
+ StartLecture 30 - Sequence Statements (12:27)
+ StartLesson 31 - Deleting, Dropping and Truncating (18:48)
+ StartLesson 32 - Working With Database Indexes (Newly Added) (14:19)
+ StartLesson 33 - System Tables, Pseudo Columns & Deleting Duplicates (Newly Added) (24:05)
+ StartLecture 34 - Views and Other Objects and Commands (Newly Added) (23:33)
+ StartLecture 35 - Granting and Revoking Privileges (15:08)
+ADDITIONAL TOPICS + REVIEW for EXAM 170-071
+ StartOFFSET and FETCH (9:55)
+ StartERD Diagrams (18:34)
+ StartCommit, Rollback, and Savepoint (14:36)
+ StartLarge Objects and Interval Data Types (17:32)
+ StartUsing Cascade Constraints and On Delete Constraints (17:56)
+ StartUNUSED Columns (7:36)
+ StartExternal Tables (14:59)
+ StartSQL Plus and Substitution Variables (32:41)
+Exam Question Walkthrough Videos
+ StartQA 1- DML, DDL, and Transaction Control (24:19)
+ StartQA 2- Fetch and Substitution Variables (25:13)
+ StartQA 3- Conversion Functions, T0_CHAR, TO_DATE, and NVL (28:50)
+APPENDIX- Installing Oracle on Windows
+ StartInstalling Oracle Database 19c in Windows (9:35)
+ StartInstalling Oracle SQL Developer in Windows (13:27)
+
+Get started no

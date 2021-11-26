@@ -1,0 +1,41 @@
+
+Total time 	:: 03 Hours, 18 Minutes and 07 Seconds'
+Videos 		:: 26
+price 		:: 12$
+
+Course Curriculum
+
+Getting Started
+ StartLecture 0 - Downloading, Installing and Setting up Tableau for the First Time (2:47)
+ StartDOWNLOAD COURSE FILES
+ StartLecture 1 - Connecting To Our First Data Source (14:45)
+ StartLecture 2 - Navigating the New Sheet Screen - Broad Overview (10:59)
+ StartLecture 3 - Creating Our first Sample View (22:24)
+Understanding Fields
+ StartLecture 4 - Dimensions and Measures (11:03)
+ StartLecture 5 - Discrete Vs. Continuous (10:59)
+Exploring Bar Charts
+ StartLecture 6 - Data Source Preview for Bar Chart (5:28)
+ StartLecture 7 - A Bar Chart Challenge! and Horizontal Bar Charts (14:14)
+ StartLecture 8 - Formatting Our Bar Chart (11:01)
+ StartLecture 9 - Stacked Barcharts in Tableau (7:57)
+ StartLecture 10 - Saving your Workbook Online (1:42)
+Learning Line Charts
+ StartLecture 11 - An Introduction to Line Charts in Tableau (6:18)
+ StartLecture 12 - Overlapping Line Charts and Editing their Axis (6:26)
+Geographical Views
+ StartLecture 13 - Geographical Views (11:47)
+Working with Dashboards
+ StartLecture 14 - Requirements for Challenge Before the Dashboard (1:55)
+ StartLecture 15 - Review of our Cities by Profits Challenge (4:39)
+ StartLecture 16 - Dashboard Overview (4:05)
+ StartLecture 17 - Completing Our Dashboard (9:50)
+ StartLecture 18 - Intro to Filtering in Tableau (2:01)
+ StartLecture 19 - Why does Filtering Matter? What's it all about Anyway! (2:48)
+ StartLecture 20 - Filtering Dimensions and Irrelevant Data (5:04)
+Advanced Concepts for the Brave!
+ StartLecture 21 - Introducing Sets (5:45)
+ StartLecture 22 - Using Our Set to Perform Analysis (8:14)
+ StartLecture 23 - Introducing and Using Groups to Perform Analysis (6:39)
+ StartLecture 24 - Creating and Using Calculated Fields (5:25)
+ StartLecture 25 - Creating and Using Parameters (3:52)
