@@ -7,8 +7,9 @@ import numpy as np
 import seaborn as sns
 import requests
 
-url_1 = r'https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,EUR,JPY,AUD,CAD'
-url_2 = r'https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD,EUR,JPY,AUD,CAD'
+# get data
+url_1 = r'https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,EUR,GBP,AUD,CAD'
+url_2 = r'https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD,EUR,GBP,AUD,CAD'
 headers = {
     'APIKEY': '4ff4d45d0887ac054fe00195145086ac9410a3721ef6263372759977f1d7fb9d'}
 response_B = requests.get(url_1, headers=headers)
@@ -18,10 +19,18 @@ print("Done")
 ETH = response_E.json()
 BTC = response_B.json()
 
+
+
 root = Tk()
 root.title('Dropbox Digital Crypto Dashboard')
 root.iconbitmap('logo.ico')
 root.geometry("800x600")
+
+
+# def graph():
+#     data = np.array([300, 700, 1900])
+#     plt.plot(data)
+#     plt.show()
 
 
 def graph():
@@ -41,16 +50,17 @@ def graph():
     # plt.xlabel('BTC')
     # plt.ylabel('USD')
     plt.plot()
+    plt.show()
 
 
 my_tree = ttk.Treeview(root)
 my_tree['columns'] = ("Coin", "Price in USD", "Price in EUR",
-                      "Price in JPY", "Price in AUD", "Price in CAD")
+                      "Price in GBP", "Price in AUD", "Price in CAD")
 my_tree.column("#0", width=0, stretch=NO)
 my_tree.column("Coin", anchor=W, width=100)
 my_tree.column("Price in USD", anchor=W, width=100)
 my_tree.column("Price in EUR", anchor=W, width=100)
-my_tree.column("Price in JPY", anchor=W, width=100)
+my_tree.column("Price in GBP", anchor=W, width=100)
 my_tree.column("Price in AUD", anchor=W, width=100)
 my_tree.column("Price in CAD", anchor=W, width=100)
 
@@ -59,27 +69,33 @@ my_tree.column("Price in CAD", anchor=W, width=100)
 my_tree.heading("Coin", text="Coin", anchor=W)
 my_tree.heading("Price in USD", text="Price in USD", anchor=W)
 my_tree.heading("Price in EUR", text="Price in EUR", anchor=W)
-my_tree.heading("Price in JPY", text="Price in JPY", anchor=W)
+my_tree.heading("Price in GBP", text="Price in GBP", anchor=W)
 my_tree.heading("Price in AUD", text="Price in AUD", anchor=W)
 my_tree.heading("Price in CAD", text="Price in CAD", anchor=W)
 
 # add data
 my_tree.insert(parent="", index="end", values=(
-    "Bitcoin", BTC['USD'], BTC['EUR'], BTC['JPY'], BTC['AUD'], BTC['CAD']))
+    "Bitcoin", BTC['USD'], BTC['EUR'], BTC['GBP'], BTC['AUD'], BTC['CAD']))
 my_tree.insert(parent="", index="end", iid=0, values=(
-    "Ethereum", ETH['USD'], ETH['EUR'], ETH['JPY'], ETH['AUD'], ETH['CAD']))
+    "Ethereum", ETH['USD'], ETH['EUR'], ETH['GBP'], ETH['AUD'], ETH['CAD']))
 
 button = Button(root, text="Plot It!", command=graph)
 
 my_tree.pack(pady=20)
 button.pack()
+# root.mainloop()
+
+# first_button = Button(root, text="Plot It!", command=graph)
+# first_button.pack()
 root.mainloop()
+
+
 
 
 # my_tree['columns'] = ()
 
 """
-url = r'https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,JPY,EUR'
+url = r'https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,GBP,EUR'
 payload = {'some': 'data'}
 headers = {'APIKEY': '4ff4d45d0887ac054fe00195145086ac9410a3721ef6263372759977f1d7fb9d'}
 response1 = requests.get(url, data=json.dumps(payload), headers=headers)
@@ -98,6 +114,11 @@ json_object = json.loads(response1.text)
 for key in json_object:
     tree.insert('', 'end', text="1", values=(key, json_object[key]))
 tree.pack()
+
+
+
+
+
 """
 
 # def graph():
@@ -108,9 +129,6 @@ tree.pack()
 # def chart():
 #     sns.barplot()
 
-# first_button = Button(root, text="Plot It!", command=graph)
-# first_button.pack()
-# root.mainloop()
 
 
 """
