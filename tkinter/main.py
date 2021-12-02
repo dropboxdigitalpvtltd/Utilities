@@ -1,12 +1,82 @@
 from tkinter import *
 from PIL import ImageTk, Image
-import numpy as np
+from tkinter import ttk
 import matplotlib.pyplot as plt
+from matplotlib.pyplot import style
+import numpy as np
 import seaborn as sns
 import requests
 
+url_1 = r'https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,EUR,JPY,AUD,CAD'
+url_2 = r'https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD,EUR,JPY,AUD,CAD'
+headers = {
+    'APIKEY': '4ff4d45d0887ac054fe00195145086ac9410a3721ef6263372759977f1d7fb9d'}
+response_B = requests.get(url_1, headers=headers)
+response_E = requests.get(url_2, headers=headers)
+print("Done")
 
-# my_tree['columns'] = () 
+ETH = response_E.json()
+BTC = response_B.json()
+
+root = Tk()
+root.title('Dropbox Digital Crypto Dashboard')
+root.iconbitmap('logo.ico')
+root.geometry("800x600")
+
+
+def graph():
+    plt.style.use('seaborn-darkgrid')
+    plt.figure(2, figsize=(10, 5))
+
+    # plt.subplot(1, 2, 1)
+    ax1 = plt.subplot(1,2,1)
+    plt.bar(ETH.keys(), ETH.values(), width=0.3)
+    plt.title("Ethereum")
+    # plt.subplot(1, 2, 2)
+    ax2 = plt.subplot(1,2,2)
+    plt.bar(BTC.keys(), BTC.values(), width=0.3)
+    plt.title("Bitcoin")
+
+    # plt.title("BTC")
+    # plt.xlabel('BTC')
+    # plt.ylabel('USD')
+    plt.plot()
+
+
+my_tree = ttk.Treeview(root)
+my_tree['columns'] = ("Coin", "Price in USD", "Price in EUR",
+                      "Price in JPY", "Price in AUD", "Price in CAD")
+my_tree.column("#0", width=0, stretch=NO)
+my_tree.column("Coin", anchor=W, width=100)
+my_tree.column("Price in USD", anchor=W, width=100)
+my_tree.column("Price in EUR", anchor=W, width=100)
+my_tree.column("Price in JPY", anchor=W, width=100)
+my_tree.column("Price in AUD", anchor=W, width=100)
+my_tree.column("Price in CAD", anchor=W, width=100)
+
+
+# Create Headings
+my_tree.heading("Coin", text="Coin", anchor=W)
+my_tree.heading("Price in USD", text="Price in USD", anchor=W)
+my_tree.heading("Price in EUR", text="Price in EUR", anchor=W)
+my_tree.heading("Price in JPY", text="Price in JPY", anchor=W)
+my_tree.heading("Price in AUD", text="Price in AUD", anchor=W)
+my_tree.heading("Price in CAD", text="Price in CAD", anchor=W)
+
+# add data
+my_tree.insert(parent="", index="end", values=(
+    "Bitcoin", BTC['USD'], BTC['EUR'], BTC['JPY'], BTC['AUD'], BTC['CAD']))
+my_tree.insert(parent="", index="end", iid=0, values=(
+    "Ethereum", ETH['USD'], ETH['EUR'], ETH['JPY'], ETH['AUD'], ETH['CAD']))
+
+button = Button(root, text="Plot It!", command=graph)
+
+my_tree.pack(pady=20)
+button.pack()
+root.mainloop()
+
+
+# my_tree['columns'] = ()
 
 """
 url = r'https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,JPY,EUR'
@@ -43,7 +113,6 @@ tree.pack()
 # root.mainloop()
 
 
-
 """
 https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC,USD,EUR
 https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC,USD,EUR,XMR,REP,ZEC &extraParams=your_app_name
@@ -52,70 +121,3 @@ https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=XMR,ETH,ZEC &extraPa
 https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,EUR,XMR,ETH,ZEC     &e=Coinbase&extraParams=your_app_name
 
 """
-
-
-
-from tkinter import *
-from PIL import ImageTk, Image
-from tkinter import ttk
-
-url_1 = r'https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,EUR,JPY,AUD,CAD'
-url_2 = r'https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD,EUR,JPY,AUD,CAD'
-headers = {'APIKEY': '4ff4d45d0887ac054fe00195145086ac9410a3721ef6263372759977f1d7fb9d'}
-response_B = requests.get(url_1, headers=headers)
-response_E = requests.get(url_2, headers=headers)
-print("Done")
-
-ETH = response_E.json()
-BTC = response_B.json()
-
-root = Tk()
-root.title('Dropbox Digital Crypto Dashboard')
-root.iconbitmap('logo.ico')
-root.geometry("500x500")
-
-def graph():
-    plt.style.use('seaborn-darkgrid')
-    plt.figure(2, figsize=(10,5))
-
-    plt.subplot(1, 2, 1)
-    plt.bar(ETH.keys(), ETH.values(), width=0.3)  
-    plt.title("Ethereum")
-    plt.subplot(1, 2, 2)
-    plt.bar(BTC.keys(), BTC.values(), width=0.3)
-    plt.title("Bitcoin")
-
-    # plt.title("BTC")
-    # plt.xlabel('BTC')
-    # plt.ylabel('USD')
-    plt.plot()
-
-my_tree = ttk.Treeview(root)
-my_tree['columns'] = ("Coin", "Price in USD", "Price in EUR",
-                      "Price in JPY", "Price in AUD", "Price in CAD")
-my_tree.column("#0", width=0, stretch=NO)
-my_tree.column("Coin", anchor=W, width=100)
-my_tree.column("Price in USD", anchor=W, width=100)
-my_tree.column("Price in EUR", anchor=W, width=100)
-my_tree.column("Price in JPY", anchor=W, width=100)
-my_tree.column("Price in AUD", anchor=W, width=100)
-my_tree.column("Price in CAD", anchor=W, width=100)
-
-
-# Create Headings
-my_tree.heading("Coin", text="Coin", anchor=W)
-my_tree.heading("Price in USD", text="Price in USD", anchor=W)
-my_tree.heading("Price in EUR", text="Price in EUR", anchor=W)
-my_tree.heading("Price in JPY", text="Price in JPY", anchor=W)
-my_tree.heading("Price in AUD", text="Price in AUD", anchor=W)
-my_tree.heading("Price in CAD", text="Price in CAD", anchor=W)
-
-# add data
-my_tree.insert(parent="", index="end", values=(
-    "Bitcoin", BTC['USD'], BTC['EUR'], BTC['JPY'], BTC['AUD'], BTC['CAD']))
-my_tree.insert(parent="", index="end", iid=0, values=(
-    "Ethereum", ETH['USD'], ETH['EUR'], ETH['JPY'], ETH['AUD'], ETH['CAD']))
-
-
-my_tree.pack(pady=20)
-root.mainloop()
